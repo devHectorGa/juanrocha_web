@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+
+    <title>Juan Rocha</title>
+    <style media="screen">
+      body {
+        background-image: url(images/bg3.jpg);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="menu">
+      <ul>
+        <li class="logo"><a href="index.html"><img src="images/logo-rojo.png"></a> </li>
+        <li><a href="literatura.html">LITERATURA</a> </li>
+        <li><a href="teatro.html">TEATRO IRREAL</a> </li>
+        <li><a href="cine.html">CINE</a> </li>
+        <li><a href="video-poemas.html">VIDEO-POEMAS</a> </li>
+        <li><a href="servicios.html">SERVICIOS</a> </li>
+        <li><a href="contacto.html">CONTACTO</a> </li>
+      </ul>
+    </div>
+    <div class="container-fluid">
+      <img class="lite-txt" src="images/cine.png">
+      <div class="row align-items-end" style="margin-top: 5%;">
+        <div class="col-10 g-5">
+          <div class="col-12 row justify-content-end libro cine">
+            <img src="images/cine1.jpg">
+            <div class="col-7">
+              <h2>LA ASUNCIÓN DE JOSÉ</h2>
+              <p>
+                <span>SINOPSÍS</span>
+                <br>
+                Bogotá 1896. El poeta José Asunción Silva vive inmerso en la re-escritura de su obra casi toda perdida en un naufragio de Venezuela a Bogotá; trabaja y conversa con Inés, joven mujer que se ocupa de las escasas necesidades del poeta, y que ha descubierto la lectura. Al terminar, José despide a Inés y se suicida. Muerto, es guiado por su hermana en un último recorrido que lo enfrenta a las decisiones que tomó para su vida, hasta por fin irse de esta dimensión en la que hacemos nuestras vidas.
+              </p>
+
+              <p>
+                <span>TAG LINE</span>
+                <br>
+                Después de la muerte habrá que cantar, habrá que bailar, habrá que hablar un poco más, y caminar hasta salir del paso.
+              </p>
+
+              <a href="" style="margin-left: 1rem; color: #fff;">COMPRAR</a>
+              <a data-bs-toggle="modal" data-bs-target="#trailer">VER TRAILER  </a>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="modal fade" id="trailer" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">LA ASUNCIÓN DE JOSÉ</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="ratio ratio-16x9">
+              <iframe src="https://player.vimeo.com/video/191678659?h=86bf7a9495" allowfullscreen></iframe>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>

@@ -1,0 +1,248 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Roboto Mono', monospace;
+}
+
+body {
+  background-image: url(images/bg1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-attachment: fixed;
+  min-height: 100%;
+}
+
+h2 {
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: 0.2rem;
+}
+
+a {
+  -o-transition: all 100ms;
+  -ms-transition: all 100ms;
+  -moz-transition: all 100ms;
+  -webkit-transition: all 100ms;
+  transition: all 100ms;
+}
+
+a, a:hover, a:active {
+  text-decoration: none;
+}
+
+.container-fluid {
+  width: calc(100% - 250px);
+  left: 200px;
+  margin-right: 0;
+  margin-left: 250px;
+}
+
+.menu {
+  position: fixed;
+  width: fit-content;
+  height: fit-content;
+  background-color: rgba(0, 0, 0, 0.4);
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  left: 0;
+  padding: 6rem 2rem 2rem 0;
+}
+
+.menu .logo img {
+  position: absolute;
+  margin-top: -36%;
+  right: 1.4rem;
+  width: 62%;
+  top: 0;
+}
+
+.menu ul {
+  list-style: none;
+}
+
+.menu ul li {
+  padding: 0.4rem 0;
+  text-align: right;
+
+}
+
+.menu ul li a {
+  text-decoration: none;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 1.3rem;
+  border-bottom: 0px solid #ffffff;
+  -o-transition: all 100ms;
+  -ms-transition: all 100ms;
+  -moz-transition: all 100ms;
+  -webkit-transition: all 100ms;
+  transition: all 100ms;
+}
+
+.menu ul li a:hover {
+  border-bottom: 3px solid #ffffff;
+  font-weight: bold;
+}
+
+.logo-txt {
+  position: fixed;
+  right: 3rem;
+  top: 8rem;
+  z-index: 2;
+}
+
+.redes {
+  position: fixed;
+  right: 8rem;
+  bottom: 3rem;
+}
+
+.txt1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #000000;
+  text-align: justify;
+}
+
+.txt2 {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: justify;
+}
+
+.lite-txt {
+  position: absolute;
+  right: 0;
+  top: 5rem;
+  z-index: 2;
+}
+
+.libro {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.4);
+  margin-top: 10%;
+  margin-left: 0;
+  margin-right: 0;
+  color: #ffffff;
+  padding: 1rem;
+}
+
+.libro h2 {
+  border-bottom: 2px solid;
+  text-align: right;
+  padding-bottom: 0.4rem;
+}
+
+.libro p {
+  text-align: center;
+}
+
+.libro p a {
+  color: #ffffff;
+  font-weight: bold;
+  letter-spacing: 0.2rem;
+  cursor: pointer;
+}
+
+.libro p a:hover {
+  border-bottom: 2px solid;
+}
+
+.libro img {
+  position: absolute;
+  width: 45%;
+  left: 0;
+  bottom: 0;
+}
+
+.cine h2 {
+  border-bottom: 2px solid;
+  text-align: right;
+  padding-bottom: 0.4rem;
+  font-size: 1.5rem;
+}
+
+.cine p {
+  font-size: 0.9rem;
+  text-align: justify;
+  font-weight: bold;
+}
+
+.cine p span {
+  font-size: 1.2rem;
+}
+
+.cine img {
+  position: absolute;
+  width: 35%;
+  left: 0;
+  bottom: 2rem;
+}
+
+.cine a {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #CCFFFF;
+  float: right;
+  cursor: pointer;
+}
+
+.cine a:hover {
+  color: #FFFFFF;
+}
+
+.servicio p {
+  font-size: 1.5rem;
+  text-align: left;
+  font-weight: bold;
+  letter-spacing: 0.2rem;
+}
+
+.servicio p span {
+  font-size: 1.7rem;
+  color: #FFFFFF;
+}
+
+.servicio a {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #000000;
+  float: right;
+  letter-spacing: 0.2rem;
+  border-bottom: 3px solid #993333;
+  cursor: pointer;
+}
+
+.servicio a:hover {
+  color: #993333 !important;
+}
+
+.modal-dialog {
+  max-width: 820px !important;
+}
+
+.modal-content {
+  color: #fff;
+  background-color: rgba(0,0,0,.8);
+}
+
+.modal-body {
+  padding: 2em 3em;
+ }
+
+ .modal-body img {
+   width: 100%;
+   margin-bottom: 10px;
+ }
+
+ .mail h2 {
+   font-size: 1.4rem;
+   color: #000000;
+ }
