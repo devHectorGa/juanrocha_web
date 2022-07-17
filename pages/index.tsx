@@ -1,35 +1,9 @@
-import { Menu } from '@/components';
+import { NavRoutes } from '@/components';
 
 export function HomePage() {
   return (
     <>
-      <Menu>
-        <ul>
-          <li className="logo">
-            <a href="/">
-              <img src="/images/logo-rojo.png" />
-            </a>
-          </li>
-          <li>
-            <a href="literatura">LITERATURA</a>
-          </li>
-          <li>
-            <a href="teatro">TEATRO IRREAL</a>
-          </li>
-          <li>
-            <a href="cine">CINE</a>
-          </li>
-          <li>
-            <a href="video-poemas">VIDEO-POEMAS</a>
-          </li>
-          <li>
-            <a href="servicios">SERVICIOS</a>
-          </li>
-          <li>
-            <a href="contacto">CONTACTO</a>
-          </li>
-        </ul>
-      </Menu>
+      <NavRoutes />
       <div className="container-fluid" style={{ height: '100vh' }}>
         <img className="logo-txt" src="/images/logo.png" />
         <img className="redes" src="/images/redes.png" />
