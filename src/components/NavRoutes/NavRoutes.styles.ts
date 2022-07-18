@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { RoundedButton } from '../Common';
 
 export const Nav = styled.nav`
   display: flex;
@@ -46,18 +47,7 @@ export const ListA = styled.a`
   transition: all 100ms;
 `;
 
-export const Button = styled.button`
-  width: 2rem;
-  height: 2rem;
-  border: 1px solid #fff;
-  border-radius: 50%;
-  background-color: transparent;
-  margin: 0.3rem;
-  color: #fff;
-
-  &:hover {
-    font-weight: bold;
-  }
+export const Button = styled(RoundedButton)`
   @media screen and (min-width: 768px) {
     display: none;
   }

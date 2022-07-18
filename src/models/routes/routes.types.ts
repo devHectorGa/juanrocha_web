@@ -2,7 +2,7 @@ export enum RoutesEnum {
   CINE = '/cine',
   CONTACTO = '/contacto',
   HOME = '/',
-  LITERATURA = 'literatura',
+  LITERATURA = '/literatura',
   TEATRO = '/teatro',
   VIDEO_POEMAS = 'video-poemas',
   SERVICIOS = '/servicios',
