@@ -13,6 +13,15 @@ export const Nav = styled.nav`
     transform: translate(0);
     transition: transform 0.5s ease-in-out 0.2s;
   }
+
+  @media screen and (min-width: 768px) {
+    position: inherit;
+    transform: translate(0);
+
+    &.isActive {
+      transform: translate(0);
+    }
+  }
 `;
 
 export const ListUl = styled.ul`
@@ -49,6 +58,9 @@ export const Button = styled.button`
   &:hover {
     font-weight: bold;
   }
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 `;
 
 export const OpenNavContainer = styled.div`
@@ -63,5 +75,13 @@ export const OpenNavContainer = styled.div`
   &.isActive {
     transform: translate(-100%);
     transition: transform 0.25s ease-in-out;
+  }
+
+  @media screen and (min-width: 768px) {
+    transform: translate(-100%);
+
+    &.isActive {
+      transform: translate(-100%);
+    }
   }
 `;

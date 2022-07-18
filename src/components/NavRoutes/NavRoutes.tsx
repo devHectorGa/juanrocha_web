@@ -25,7 +25,7 @@ const RoutesMap = Object.keys(routes).map((route) => (
 ));
 
 export const NavRoutes: FC = () => {
-  const [showNav, setShowNav] = useState(true);
+  const [showNav, setShowNav] = useState(false);
   const [isPending, startTransition] = useTransition();
 
   const closeNav = () => startTransition(() => setShowNav(false));
