@@ -1,9 +1,6 @@
-import { NavRoutes } from '@/components';
-
 export function HomePage() {
   return (
     <>
-      <NavRoutes />
       <div className="container-fluid" style={{ height: '100vh' }}>
         <img className="logo-txt" src="/images/logo.png" />
         <img className="redes" src="/images/redes.png" />
