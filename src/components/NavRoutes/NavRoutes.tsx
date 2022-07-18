@@ -44,6 +44,11 @@ export const NavRoutes: FC = () => {
             <CloseOutline />
           </Button>
           {RoutesMap}
+          <ListLi>
+            <Link href="https://tienda.juanrocha.co" passHref>
+              <ListA>Tienda</ListA>
+            </Link>
+          </ListLi>
         </ListUl>
       </Nav>
     </>
