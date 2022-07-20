@@ -1,5 +1,3 @@
-function Literatura() {
-  return <div>Página literatura en construcción!</div>;
-}
+import { Literature } from '@/components';
 
-export default Literatura;
+export default Literature;

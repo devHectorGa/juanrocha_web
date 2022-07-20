@@ -9,7 +9,7 @@ import {
 } from './Modal.styles';
 
 export const Modal: FC<
-  PropsWithChildren & { isOpen: boolean; handleClose: Function }
+  PropsWithChildren & { isOpen: boolean; handleClose: Function; title?: string }
 > = ({ isOpen, children, handleClose }) => {
   if (!isOpen) return null;
 
