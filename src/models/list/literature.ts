@@ -1,6 +1,6 @@
-import { LiteratureType } from './literature.types';
+import { listType } from './list.types';
 
-export const literatures: LiteratureType[] = [
+export const literatures: listType[] = [
   {
     imageSrc: '/images/libro1.jpg',
     marketSrc: 'https://tienda.juanrocha.co/',

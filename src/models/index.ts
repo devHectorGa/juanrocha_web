@@ -1,2 +1,2 @@
-export * from './literature';
+export * from './list';
 export * from './routes';

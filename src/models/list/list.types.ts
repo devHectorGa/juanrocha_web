@@ -1,4 +1,4 @@
-export type LiteratureType = {
+export type listType = {
   imageSrc: string;
   title: string;
   preview: string[];

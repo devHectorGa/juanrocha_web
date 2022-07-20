@@ -1,13 +1,9 @@
 import Image from 'next/image';
-import {
-  GalleryContainer,
-  ImageContainer,
-  LiteratureContainer,
-} from './Literature.styles';
+import { GalleryContainer, ImageContainer } from './Literature.styles';
 import { literatures } from '@/models';
-import { LiteratureItem } from './LiteratureItem';
 import { useLayoutEffect, useState } from 'react';
 import { Modal } from '../Modal';
+import { List } from '../Common';
 
 const RATIO_IMAGE = 0.649;
 const IS_SERVER = typeof window === 'undefined';
@@ -33,15 +29,7 @@ export const Literature = () => {
           layout="responsive"
         />
       </ImageContainer>
-      <LiteratureContainer>
-        {literatures.map((literature) => (
-          <LiteratureItem
-            key={literature.title}
-            onShowMore={setGallery}
-            {...literature}
-          />
-        ))}
-      </LiteratureContainer>
+      <List onShowMore={setGallery} data={literatures} />
       <Modal
         handleClose={() => setGallery(null)}
         isOpen={Boolean(gallery?.length)}
