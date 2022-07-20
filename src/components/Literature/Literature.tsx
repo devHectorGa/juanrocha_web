@@ -30,7 +30,7 @@ export const Literature = () => {
           width={544}
           height={58}
           src="/images/literatura.png"
-          layout="fixed"
+          layout="responsive"
         />
       </ImageContainer>
       <LiteratureContainer>
