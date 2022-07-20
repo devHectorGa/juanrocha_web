@@ -1,3 +1,8 @@
-import { Literature } from '@/components';
+import { ListPage } from '@/components';
+import { literatures } from '@/models';
 
-export default Literature;
+const LiteraturePage = () => {
+  return <ListPage data={literatures} srcLogo="/images/literatura.png" />;
+};
+
+export default LiteraturePage;

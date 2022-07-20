@@ -1,15 +1,15 @@
 import Image from 'next/image';
-import { GalleryContainer, ImageContainer } from './Literature.styles';
-import { literatures } from '@/models';
+import { GalleryContainer, ImageContainer } from './ListPage.styles';
 import { useLayoutEffect, useState } from 'react';
 import { Modal } from '../Modal';
 import { List } from '../Common';
+import { ListProps } from './List.types';
 
 const RATIO_IMAGE = 0.649;
 const IS_SERVER = typeof window === 'undefined';
 const getWidth = () => (IS_SERVER ? 714 : window?.screen?.width * 0.9);
 
-export const Literature = () => {
+export const ListPage: ListProps = ({ srcLogo, data }) => {
   const [gallery, setGallery] = useState<string[]>(null);
   const [width, setWidth] = useState<number>(getWidth());
 
@@ -22,14 +22,9 @@ export const Literature = () => {
   return (
     <>
       <ImageContainer>
-        <Image
-          width={544}
-          height={58}
-          src="/images/literatura.png"
-          layout="responsive"
-        />
+        <Image width={544} height={58} src={srcLogo} layout="responsive" />
       </ImageContainer>
-      <List onShowMore={setGallery} data={literatures} />
+      <List onShowMore={setGallery} data={data} />
       <Modal
         handleClose={() => setGallery(null)}
         isOpen={Boolean(gallery?.length)}
