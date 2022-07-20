@@ -29,7 +29,7 @@ export const ListUl = styled.ul`
   margin: auto;
   list-style: none;
   background-color: rgba(0, 0, 0, 0.6);
-  padding: 0rem 2rem 2rem 0;
+  padding: 0rem 2rem 2rem 1rem;
 `;
 
 export const ListLi = styled.li`

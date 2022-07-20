@@ -16,11 +16,11 @@ import { CloseOutline } from '@styled-icons/evaicons-outline/CloseOutline';
 const RoutesMap = Object.keys(routes).map((route) => (
   <ListLi key={route}>
     <Link href={route}>
-      {routes[route]?.CustomRender ? (
-        routes[route]?.CustomRender
-      ) : (
-        <ListA>{routes[route]?.label}</ListA>
-      )}
+      <ListA>
+        {routes[route]?.CustomRender
+          ? routes[route]?.CustomRender
+          : routes[route]?.label}
+      </ListA>
     </Link>
   </ListLi>
 ));

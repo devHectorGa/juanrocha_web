@@ -8,7 +8,6 @@ export const ModalContainer = styled.aside`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
   z-index: 999;
   width: 100vw;
   height: 100vh;
@@ -16,12 +15,13 @@ export const ModalContainer = styled.aside`
 
 export const ModalContent = styled.div`
   position: relative;
-  width: 70%;
-  height: 70%;
+  overflow-x: auto;
+  flex-direction: column;
+  width: 90%;
+  height: 90%;
   color: #fff;
   display: flex;
   align-items: center;
-  justify-content: center;
   background-color: rgba(0, 0, 0, 0.9);
 `;
 
@@ -36,7 +36,7 @@ export const ModalBackDrop = styled.div`
 `;
 
 export const Button = styled(RoundedButton)`
-  position: absolute;
+  position: fixed;
   top: 1rem;
   right: 1rem;
 `;

@@ -3,7 +3,7 @@ import { LiteratureType } from './literature.types';
 export const literatures: LiteratureType[] = [
   {
     imageSrc: '/images/libro1.jpg',
-    markerSrc: 'https://tienda.juanrocha.co/',
+    marketSrc: 'https://tienda.juanrocha.co/',
     preview: [
       '/images/el-ahorcado/1.jpg',
       '/images/el-ahorcado/2.jpg',
@@ -20,7 +20,7 @@ export const literatures: LiteratureType[] = [
   },
   {
     imageSrc: '/images/libro2.jpg',
-    markerSrc: 'https://tienda.juanrocha.co/',
+    marketSrc: 'https://tienda.juanrocha.co/',
     preview: [
       '/images/los-descorazados/1.jpg',
       '/images/los-descorazados/2.jpg',
@@ -39,7 +39,7 @@ export const literatures: LiteratureType[] = [
   },
   {
     imageSrc: '/images/libro3.jpg',
-    markerSrc: 'https://tienda.juanrocha.co/',
+    marketSrc: 'https://tienda.juanrocha.co/',
     preview: [
       '/images/los-acorazados/1.jpg',
       '/images/los-acorazados/2.jpg',
@@ -56,7 +56,7 @@ export const literatures: LiteratureType[] = [
   },
   {
     imageSrc: '/images/libro4.jpg',
-    markerSrc: 'https://tienda.juanrocha.co/',
+    marketSrc: 'https://tienda.juanrocha.co/',
     preview: [
       '/images/no-digas-nada/1.jpg',
       '/images/no-digas-nada/2.jpg',
@@ -80,7 +80,7 @@ export const literatures: LiteratureType[] = [
   },
   {
     imageSrc: '/images/libro5.jpg',
-    markerSrc: 'https://tienda.juanrocha.co/',
+    marketSrc: 'https://tienda.juanrocha.co/',
     preview: [
       '/images/escorias/1.jpg',
       '/images/escorias/2.jpg',
@@ -98,7 +98,7 @@ export const literatures: LiteratureType[] = [
   },
   {
     imageSrc: '/images/libro6.jpg',
-    markerSrc: 'https://tienda.juanrocha.co/',
+    marketSrc: 'https://tienda.juanrocha.co/',
     preview: [
       'images/tiempos/1.jpg',
       'images/tiempos/2.jpg',

@@ -1,4 +1,4 @@
-import { FC, PropsWithChildren } from 'react';
+import { FC, MutableRefObject, PropsWithChildren } from 'react';
 import { CloseOutline } from '@styled-icons/evaicons-outline/CloseOutline';
 import { Portal } from '../Portal';
 import {
@@ -9,7 +9,11 @@ import {
 } from './Modal.styles';
 
 export const Modal: FC<
-  PropsWithChildren & { isOpen: boolean; handleClose: Function; title?: string }
+  PropsWithChildren & {
+    isOpen: boolean;
+    handleClose: Function;
+    title?: string;
+  }
 > = ({ isOpen, children, handleClose }) => {
   if (!isOpen) return null;
 

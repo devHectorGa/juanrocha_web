@@ -8,8 +8,9 @@ export const routes: RoutesType = {
       <Image
         width={185}
         height={230}
-        layout="responsive"
         src="/images/logo-rojo.png"
+        layout="responsive"
+        objectPosition="right center"
       />
     ),
   },

@@ -8,7 +8,7 @@ export const LiteratureContainer = styled.div`
   justify-content: center;
 `;
 
-export const LiteratureItem = styled.div`
+export const LiteratureItemContainer = styled.div`
   background-color: rgba(0, 0, 0, 0.4);
   display: grid;
   grid-template-columns: auto 1fr;
@@ -46,12 +46,26 @@ export const LiteratureText = styled.p`
   border-bottom: 1px solid transparent;
 
   &:hover {
+    color: #ccc;
     border-top: 1px solid #fff;
     border-bottom: 1px solid #fff;
+  }
+`;
+
+export const LiteratureA = styled.a`
+  color: #fff;
+  text-decoration: none;
+
+  &:hover {
+    color: #ccc;
   }
 `;
 
 export const ImageContainer = styled.div`
   margin-top: 5vmin;
   text-align: right;
+`;
+
+export const GalleryContainer = styled.div`
+  width: '100%';
 `;
