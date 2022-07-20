@@ -1,6 +1,7 @@
-import { FC, useState, useTransition } from 'react';
-import { routes } from '@/models';
+import { FC, useState, useTransition, useLayoutEffect } from 'react';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
+import { routes } from '@/models';
 import {
   Nav,
   ListUl,
@@ -27,9 +28,14 @@ const RoutesMap = Object.keys(routes).map((route) => (
 export const NavRoutes: FC = () => {
   const [showNav, setShowNav] = useState(false);
   const [isPending, startTransition] = useTransition();
+  const { route } = useRouter();
 
   const closeNav = () => startTransition(() => setShowNav(false));
   const openNav = () => startTransition(() => setShowNav(true));
+
+  useLayoutEffect(() => {
+    showNav && closeNav();
+  }, [route]);
 
   return (
     <>
