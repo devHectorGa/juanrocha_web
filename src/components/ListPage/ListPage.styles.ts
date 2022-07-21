@@ -8,3 +8,8 @@ export const ImageContainer = styled.div`
 export const GalleryContainer = styled.div`
   width: '100%';
 `;
+
+export const GalleryImage = styled.img`
+  width: 100%;
+  height: auto;
+`;

@@ -1,5 +1,9 @@
 import Image from 'next/image';
-import { GalleryContainer, ImageContainer } from './ListPage.styles';
+import {
+  GalleryContainer,
+  GalleryImage,
+  ImageContainer,
+} from './ListPage.styles';
 import { useLayoutEffect, useState } from 'react';
 import { Modal } from '../Modal';
 import { List } from '../Common';
@@ -30,14 +34,7 @@ export const ListPage: ListProps = ({ srcLogo, data, ratioImages }) => {
       >
         <GalleryContainer>
           {gallery?.map((src) => (
-            <div>
-              <Image
-                width={width}
-                height={width / ratioImages}
-                src={src}
-                layout="intrinsic"
-              />
-            </div>
+            <GalleryImage src={src} />
           ))}
         </GalleryContainer>
       </Modal>
