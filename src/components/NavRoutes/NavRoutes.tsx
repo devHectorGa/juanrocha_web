@@ -40,13 +40,13 @@ export const NavRoutes: FC = () => {
   return (
     <>
       <OpenNavContainer className={showNav && 'isActive'}>
-        <Button disable={isPending} onClick={openNav}>
+        <Button disabled={isPending} onClick={openNav}>
           <Menu />
         </Button>
       </OpenNavContainer>
       <Nav className={showNav && 'isActive'}>
         <ListUl>
-          <Button disable={isPending} onClick={closeNav}>
+          <Button disabled={isPending} onClick={closeNav}>
             <CloseOutline />
           </Button>
           {RoutesMap}
