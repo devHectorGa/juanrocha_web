@@ -4,4 +4,5 @@ import { listType } from '@/models';
 export type ListType = FC<{
   data: listType[];
   onShowMore: Dispatch<SetStateAction<string[]>>;
+  ratioImages: number;
 }>;

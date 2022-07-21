@@ -1,15 +1,15 @@
-import { literatures } from '@/models';
 import { ListContainer } from './List.styles';
 import { ListType } from './List.type';
 import { ListItem } from './ListItem';
 
-export const List: ListType = ({ data, onShowMore }) => (
+export const List: ListType = ({ data, onShowMore, ratioImages }) => (
   <ListContainer>
-    {literatures.map((literature) => (
+    {data?.map((item) => (
       <ListItem
-        key={literature.title}
+        key={item.title}
         onShowMore={onShowMore}
-        {...literature}
+        ratioImages={ratioImages}
+        {...item}
       />
     ))}
   </ListContainer>

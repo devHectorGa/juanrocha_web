@@ -5,11 +5,10 @@ import { Modal } from '../Modal';
 import { List } from '../Common';
 import { ListProps } from './List.types';
 
-const RATIO_IMAGE = 0.649;
 const IS_SERVER = typeof window === 'undefined';
 const getWidth = () => (IS_SERVER ? 714 : window?.screen?.width * 0.9);
 
-export const ListPage: ListProps = ({ srcLogo, data }) => {
+export const ListPage: ListProps = ({ srcLogo, data, ratioImages }) => {
   const [gallery, setGallery] = useState<string[]>(null);
   const [width, setWidth] = useState<number>(getWidth());
 
@@ -24,7 +23,7 @@ export const ListPage: ListProps = ({ srcLogo, data }) => {
       <ImageContainer>
         <Image width={544} height={58} src={srcLogo} layout="responsive" />
       </ImageContainer>
-      <List onShowMore={setGallery} data={data} />
+      <List onShowMore={setGallery} data={data} ratioImages={ratioImages} />
       <Modal
         handleClose={() => setGallery(null)}
         isOpen={Boolean(gallery?.length)}
@@ -34,7 +33,7 @@ export const ListPage: ListProps = ({ srcLogo, data }) => {
             <div>
               <Image
                 width={width}
-                height={width / RATIO_IMAGE}
+                height={width / ratioImages}
                 src={src}
                 layout="intrinsic"
               />

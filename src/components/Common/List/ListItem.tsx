@@ -15,10 +15,11 @@ export const ListItem = ({
   marketSrc,
   preview,
   onShowMore,
+  ratioImages,
 }) => (
   <ListItemContainer>
     <ListImageContainer>
-      <Image src={imageSrc} width={112} height={157} />
+      <Image src={imageSrc} width={112} height={112 / ratioImages || 112} />
     </ListImageContainer>
     <ListTexts>
       <ListTitle>{title}</ListTitle>
