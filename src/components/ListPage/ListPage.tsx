@@ -25,7 +25,7 @@ export const ListPage: ListProps = ({ srcLogo, data, ratioImages }) => {
   return (
     <>
       <ImageContainer>
-        <Image width={544} height={58} src={srcLogo} layout="responsive" />
+        <Image width={544} height={58} src={srcLogo} />
       </ImageContainer>
       <List onShowMore={setGallery} data={data} ratioImages={ratioImages} />
       <Modal
